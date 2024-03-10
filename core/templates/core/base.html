@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    {% block title %}<title>Home</title>{% endblock title %}
+    <link rel="stylesheet" href="{% static "core/css/all.css" %}">
+    <link rel="stylesheet" href="{% static "core/css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "core/css/page.css" %}" media="screen">
+    {% block css %} <link rel="stylesheet" href="{% static "core/css/Home.css" %}" media="screen">  {% endblock css %}
+    <script class="u-script" type="text/javascript" src="{% static "core/js/jquery.js" %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static "core/js/page.js" %}" defer=""></script>
+    <script src="{% static "core/js/bootstrap.js" %}"></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#73a3de">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+</head>
+{% block body %} 
+ <bodydata-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-overlap-contrast u-overlap-transparent u-xl-mode" data-lang="en">
+{% endblock body %}
+ {% include "core/header.html" %}
+{% block section %}
+    <section class="u-align-center u-black u-clearfix u-section-1" id="sec-8b47">
+     <div class="u-clearfix u-sheet u-sheet-1">
+      <img class="u-image u-image-circle u-image-1" src="{% static "core/img/uyy.jpg" %}" alt="" data-image-width="1980" data-image-height="1120">
+      <img class="u-image u-image-circle u-image-2" src="{% static "core/img/pic1.jpeg" %}" alt="" data-image-width="736" data-image-height="679"></img>
+      <h1 class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-text u-text-palette-1-base u-text-1">Mohammed </h1>
+      <h1 class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-text u-text-white u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">Web Developer </h1>
+      <h1 class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-text u-text-palette-1-base u-text-3">I'm </h1>
+      <p class="u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-custom-font u-font-ubuntu u-text u-text-4">
+        I am an impassioned and driven student with an unwavering enthusiasm for delving into the realms of machine learning and artificial intelligence (AI). Fuelled by an unquenchable thirst for knowledge and a fervent desire to innovate, I have honed my skills to master the intricacies of machine learning principles and methodologies. My journey in AI is not just about academic pursuit; it's a relentless quest to harness the transformative power of technology to solve real-world problems. With every challenge, I am invigorated, driven by the belief that every line of code I write has the potential to shape the future. As I embark on this exhilarating journey, I am determined to push boundaries, unlock new possibilities, and leave an indelible mark on the landscape of AI-driven innovation
+      </p>
+      <a href="{% url "contactpage" %}"  class="u-active-white u-align-center-md u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-xl u-border-none u-btn u-btn-round u-button-style u-gradient u-hover-feature u-hover-white u-none u-radius-50 u-text-active-white u-text-hover-white u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Contact Me </a>
+     </div>
+    
+     </section>
+
+
+ </body>
+
+{% endblock section %}
+
+</html>

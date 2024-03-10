@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "disown-opener": "off",
+    "no-inline-styles": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "axe/text-alternatives": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-ms-text-size-adjust",
+          "-webkit-text-decoration-skip",
+          "break-after: always",
+          "-webkit-text-size-adjust"
+        ]
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 118",
+    "not firefox <= 118",
+    "not opera <= 103",
+    "not and_chr <= 117",
+    "not chrome <= 118",
+    "not samsung <= 22"
+  ]
+}
